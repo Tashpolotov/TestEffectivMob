@@ -68,7 +68,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_et_number"
         style="@style/TextInputLayout"
-        android:hint="@string/password"
+        android:hint="@string/number"
         app:hintTextColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

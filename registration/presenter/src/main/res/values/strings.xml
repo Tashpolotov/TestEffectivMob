@@ -6,4 +6,5 @@
     <string name="password">Введите Пароль</string>
     <string name="second_name">Введите фамилию</string>
     <string name="go">Войти</string>
+    <string name="number">Введите номер телефона</string>
 </resources>
