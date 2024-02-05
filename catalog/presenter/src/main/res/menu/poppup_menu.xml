@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/popular"
+        android:title="По Популярности"/>
+
+    <item
+        android:id="@+id/priceMinus"
+        android:title="По уменьшению цены"/>
+
+    <item
+        android:id="@+id/pricePlus"
+        android:title="По возрастанию цены"/>
+
+</menu>

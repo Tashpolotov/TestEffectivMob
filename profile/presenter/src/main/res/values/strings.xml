@@ -1,0 +1,15 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Личный кабинет</string>
+    <string name="name">Марина И</string>
+    <string name="number">номер телефона</string>
+    <string name="favourite">Избранное</string>
+    <string name="tovar">1 товар</string>
+    <string name="shop">Магазины</string>
+    <string name="sms">Обратная связь</string>
+    <string name="offert">Офферта</string>
+    <string name="back_tovar">Возврат товара</string>
+    <string name="my_room">Личный кабинет</string>
+    <string name="log_out">Выйти</string>
+</resources>

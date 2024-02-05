@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bottom_menu_color">#D62F89</color>
+    <color name="btn_color_false">#66D62F89</color>
+    <color name="gray">#D7DADF</color>
+    <color name="back_linear">#66F8F8F8</color>
+    <color name="orange">#F9A249</color>
+    <color name="selected_tag">#9252606D</color>
+    <color name="text_gay_color">#A0A1A3</color>
+
+</resources>

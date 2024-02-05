@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.CatalogFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:indeterminateTint="@color/black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/catalog"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_strelka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img_strelka"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img_strelka"
+        app:layout_constraintBottom_toBottomOf="@id/img_strelka"
+        android:text="@string/favourite"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_fav_strelka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_favourite"
+        app:layout_constraintBottom_toBottomOf="@id/img_strelka"
+        android:src="@drawable/img_fav"
+        android:layout_marginStart="10dp"
+
+            />
+
+    <TextView
+        android:id="@+id/tv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/img_strelka"
+        android:text="@string/filter"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="10dp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_filter"
+        app:layout_constraintTop_toTopOf="@id/img_strelka"
+        app:layout_constraintEnd_toStartOf="@id/tv_filter"
+        android:layout_marginEnd="10dp"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/img_strelka"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp">
+
+
+        <LinearLayout
+            android:id="@+id/linear_all_see"
+            style="@style/Linear">
+
+
+            <TextView
+                android:text="@string/all_see"
+                style="@style/TextView"
+                />
+
+            <ImageView
+                android:id="@+id/img_all_see_x"
+                style="@style/image"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_all_face"
+            style="@style/Linear">
+
+
+            <TextView
+                android:text="@string/face"
+                style="@style/TextView"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_all_face_x"
+                style="@style/image"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_all_body"
+            style="@style/Linear">
+
+
+            <TextView
+                android:text="@string/body"
+                style="@style/TextView"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_all_body_x"
+                style="@style/image"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_all_zagar"
+            style="@style/Linear">
+
+
+            <TextView
+                android:text="@string/zagar"
+                style="@style/TextView"
+
+                />
+
+            <ImageView
+                android:id="@+id/img_all_zagar_x"
+                style="@style/image"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_all_mask"
+            style="@style/Linear"
+            >
+
+
+            <TextView
+                android:text="@string/mask"
+                style="@style/TextView"
+                />
+
+            <ImageView
+                android:id="@+id/img_all_mask_x"
+                style="@style/image"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:spanCount="2"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_catalog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
